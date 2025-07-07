@@ -128,8 +128,8 @@ input[type="submit"]:hover {
         padding: 24px 0 24px 0;
         border-radius: 0;
         box-shadow: none;
-        min-height: 100vh;
-        height: 100%;
+        min-height: 300vh;
+        height: 200%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
