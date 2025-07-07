@@ -1,3 +1,5 @@
+<head>
+<style>
 body {
     background-color: #fff;
     margin: 0;
@@ -106,13 +108,34 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 700px) {
+    html, body {
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background: #fff;
+    }
     .form-container {
-        padding: 24px 0 24px 0;
-        /* keep background and width unchanged! */
+        background: #f1f3f6;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 24px 0;
+        border-radius: 0;
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        box-sizing: border-box;
     }
     .form-container form {
-        max-width: 98vw;
-        padding: 0 6vw;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0;
+        padding: 0 4vw;
+        box-sizing: border-box;
     }
     .input-row {
         flex-direction: column;
@@ -131,19 +154,5 @@ input[type="submit"]:hover {
         border-radius: 6px;
     }
 }
-
-@media (max-width: 400px) {
-    .form-container form {
-        padding: 0 2vw;
-    }
-    .form-title, h1 {
-        font-size: 1.09em;
-    }
-    .form-group label {
-        font-size: 1em;
-    }
-    p {
-        font-size: 0.98em;
-        padding: 0 1vw;
-    }
-}
+</style>
+</head> 
