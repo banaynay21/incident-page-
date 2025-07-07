@@ -106,19 +106,74 @@ input[type="submit"]:hover {
     background: #008f63;
 }
 @media (max-width: 700px) {
-    .form-container,
-    .form-container form,
-    .form-title {
-        max-width: 98vw;
+    html, body {
+        height: 100%;
+        min-height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .form-container {
+        background: #f1f3f6;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 24px 0 24px 0;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 100vh;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        flex: 1 0 auto;
+    }
+    .form-container form {
+        max-width: 600px;
+        width: 100%;
+        margin: 0;
         padding: 0 4vw;
+        box-sizing: border-box;
     }
     .input-row {
         flex-direction: column;
         gap: 0;
+        margin-bottom: 0;
+    }
+    .form-group {
+        margin-bottom: 14px;
+    }
+    .form-actions {
+        justify-content: flex-end;
+        margin-top: 12px;
+    }
+    input[type="submit"] {
+        width: auto;
+        background: #00ad78;
+        color: white;
+        border: none;
+        border-radius: 0;
+        font-size: 1em;
+        padding: 7px 24px;
+        cursor: pointer;
+        transform: skew(-20deg);
+        min-width: 90px;
+        transition: background 0.2s;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-left: auto;
+        display: block;
+    }
+    input[type="submit"]:hover {
+        background: #008f63;
     }
 }
-</style>
-</head>
 <body>
 
 <h1>Report Incident</h1>
