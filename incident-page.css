@@ -25,7 +25,8 @@ p {
 .form-container {
   background: #f1f3f6;
   width: 100%;
-  min-height: 100vh; /* stretches to bottom */
+  height: auto;      /* Only as tall as the content */
+  min-height: 0;     /* No forced min height */
   margin: 0;
   border-radius: 0;
   box-shadow: none;
@@ -79,6 +80,7 @@ p {
   background: #fff;
   resize: none;
   box-sizing: border-box;
+  width: 100%; /* fields fill container */
 }
 .form-group textarea {
   min-height: 80px;
@@ -112,14 +114,24 @@ input[type="submit"]:hover {
 
 /* Responsive styles for mobile */
 @media (max-width: 700px) {
+  h1, .form-title {
+    font-size: 1.3em;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 1.12em;
+    padding: 0 2vw;
+    line-height: 1.35;
+  }
   .form-container {
-    min-height: 100vh;
+    height: auto;
+    min-height: 0;
     padding: 24px 0 24px 0;
   }
   .form-container form {
-    max-width: 98vw;
-    width: 98vw;
-    padding: 0 2vw;
+    max-width: 99vw;
+    width: 99vw;
+    padding: 0 1vw;
   }
   .input-row {
     flex-direction: column;
@@ -128,6 +140,14 @@ input[type="submit"]:hover {
   }
   .form-group {
     margin-bottom: 14px;
+  }
+  .form-group label {
+    font-size: 1.08em;
+  }
+  .form-group input,
+  .form-group textarea {
+    font-size: 1.08em;
+    width: 100%;
   }
   .form-actions {
     margin-top: 12px;
