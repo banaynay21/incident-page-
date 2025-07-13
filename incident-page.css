@@ -1,180 +1,160 @@
 <head>
 <style>
 body {
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    font-size: 0.95em;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 0.95em;
 }
 h1 {
-    color: #222;
-    text-align: center;
-    padding-top: 24px;
-    font-size: 1.6em;
-    margin-bottom: 8px;
-    font-weight: bold;
+  color: #222;
+  text-align: center;
+  padding-top: 24px;
+  font-size: 1.6em;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 p {
-    text-align: center;
-    color: #555;
-    max-width: 600px;
-    margin: 0 auto 24px auto;
-    font-size: 1em;
+  text-align: center;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 24px auto;
+  font-size: 1em;
 }
 .form-container {
-    background: #f1f3f6;
-    width: 100vw;
-    margin: 0 0 24px 0;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 40px 0 40px 0;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+  background: #f1f3f6;
+  width: 100%;
+  min-height: 100vh; /* stretches to bottom */
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 40px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .form-container form {
-    background: none;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 24px;
-    box-sizing: border-box;
+  background: none;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 .form-title {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 24px;
-    margin-top: 0;
-    padding: 0;
-    color: #222;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 24px;
+  margin-top: 0;
+  padding: 0;
+  color: #222;
 }
 .input-row {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 .input-row .form-group {
-    flex: 1;
+  flex: 1;
 }
 .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 .form-group label {
-    font-weight: bold;
-    margin-bottom: 6px;
-    color: #222;
-    font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #222;
+  font-size: 1em;
 }
 .form-group input,
 .form-group textarea {
-    padding: 12px;
-    border: 1px solid #d1d5db;
-    border-radius: 5px;
-    font-size: 1em;
-    background: #fff;
-    resize: none;
-    box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 1em;
+  background: #fff;
+  resize: none;
+  box-sizing: border-box;
 }
 .form-group textarea {
-    min-height: 80px;
-    max-width: 100%;
+  min-height: 80px;
+  max-width: 100%;
 }
 .form-actions {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 6px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 12px;
 }
 input[type="submit"] {
-    background: #00ad78;
-    color: white;
-    border: none;
-    border-radius: 0;
-    font-size: 1em;
-    padding: 7px 24px;
-    cursor: pointer;
-    transform: skew(-20deg);
-    min-width: 90px;
-    transition: background 0.2s;
-    font-weight: bold;
-    letter-spacing: 1px;
+  background: #00ad78;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-size: 1em;
+  padding: 7px 24px;
+  cursor: pointer;
+  transform: skew(-20deg);
+  min-width: 90px;
+  transition: background 0.2s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: auto;
+  display: block;
 }
 input[type="submit"]:hover {
-    background: #008f63;
+  background: #008f63;
 }
 
+/* Responsive styles for mobile */
 @media (max-width: 700px) {
-    html, body {
-        height: 100%;
-        min-height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-    }
-    .form-container {
-        background: #f1f3f6;
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 24px 0 24px 0;
-        border-radius: 0;
-        box-shadow: none;
-        min-height: 300vh;
-        height: 200%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        box-sizing: border-box;
-        flex: 1 0 auto;
-    }
-    .form-container form {
-        max-width: 600px;
-        width: 100%;
-        margin: 0;
-        padding: 0 4vw;
-        box-sizing: border-box;
-    }
-    .input-row {
-        flex-direction: column;
-        gap: 0;
-        margin-bottom: 0;
-    }
-    .form-group {
-        margin-bottom: 14px;
-    }
-    .form-actions {
-        justify-content: flex-end;
-        margin-top: 12px;
-    }
-    input[type="submit"] {
-        width: auto;
-        background: #00ad78;
-        color: white;
-        border: none;
-        border-radius: 0;
-        font-size: 1em;
-        padding: 7px 24px;
-        cursor: pointer;
-        transform: skew(-20deg);
-        min-width: 90px;
-        transition: background 0.2s;
-        font-weight: bold;
-        letter-spacing: 1px;
-        margin-left: auto;
-        display: block;
-    }
-    input[type="submit"]:hover {
-        background: #008f63;
-    }
+  .form-container {
+    min-height: 100vh;
+    padding: 24px 0 24px 0;
+  }
+  .form-container form {
+    max-width: 98vw;
+    width: 98vw;
+    padding: 0 2vw;
+  }
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .form-group {
+    margin-bottom: 14px;
+  }
+  .form-actions {
+    margin-top: 12px;
+  }
+  input[type="submit"] {
+    width: auto;
+    font-size: 1em;
+    padding: 7px 24px;
+    margin-left: auto;
+  }
+}
+@media (max-width: 400px) {
+  .form-container form {
+    max-width: 99vw;
+    width: 99vw;
+    padding: 0 1vw;
+  }
+  .form-title, h1 {
+    font-size: 1.09em;
+  }
+  .form-group label {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.98em;
+    padding: 0 1vw;
+  }
 }
 </style>
 </head> 
