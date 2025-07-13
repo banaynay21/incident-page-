@@ -114,12 +114,15 @@ input[type="submit"]:hover {
 
 /* Responsive styles for mobile */
 @media (max-width: 700px) {
-  h1, .form-title {
-    font-size: 1.3em;
+  h1,
+  .form-title {
+    /* Responsive font size: min 1.3em, preferred 6vw, max 2.2em */
+    font-size: clamp(1.3em, 6vw, 2.2em);
     line-height: 1.2;
   }
   p {
-    font-size: 1.12em;
+    /* Responsive font size: min 1.12em, preferred 4.6vw, max 1.5em */
+    font-size: clamp(1.12em, 4.6vw, 1.5em);
     padding: 0 2vw;
     line-height: 1.35;
   }
@@ -141,20 +144,18 @@ input[type="submit"]:hover {
   .form-group {
     margin-bottom: 14px;
   }
-  .form-group label {
-    font-size: 1.08em;
-  }
+  .form-group label,
   .form-group input,
   .form-group textarea {
-    font-size: 1.08em;
-    width: 100%;
+    /* Responsive font size for form */
+    font-size: clamp(1.08em, 4vw, 1.5em);
   }
   .form-actions {
     margin-top: 12px;
   }
   input[type="submit"] {
     width: auto;
-    font-size: 1em;
+    font-size: clamp(1em, 4vw, 1.4em);
     padding: 7px 24px;
     margin-left: auto;
   }
@@ -165,14 +166,17 @@ input[type="submit"]:hover {
     width: 99vw;
     padding: 0 1vw;
   }
-  .form-title, h1 {
-    font-size: 1.09em;
+  .form-title,
+  h1 {
+    font-size: clamp(1.09em, 6vw, 2.2em);
   }
-  .form-group label {
-    font-size: 1em;
+  .form-group label,
+  .form-group input,
+  .form-group textarea {
+    font-size: clamp(1em, 4vw, 1.5em);
   }
   p {
-    font-size: 0.98em;
+    font-size: clamp(0.98em, 4vw, 1.3em);
     padding: 0 1vw;
   }
 }
