@@ -5,22 +5,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.7rem; /* even bigger base */
 }
 h1 {
   color: #222;
   text-align: center;
-  padding-top: 2rem;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  padding-top: 4rem;
+  font-size: 4rem; /* much larger */
+  margin-bottom: 2.5rem;
   font-weight: bold;
 }
 p {
   text-align: center;
   color: #555;
-  max-width: 42rem;
-  margin: 0 auto 2rem auto;
-  font-size: 1.3rem;
+  max-width: 60rem;
+  margin: 0 auto 3rem auto;
+  font-size: 2.5rem;
 }
 .form-container {
   background: #f1f3f6;
@@ -30,32 +30,32 @@ p {
   margin: 0;
   border-radius: 0;
   box-shadow: none;
-  padding: 3rem 0 3rem 0;
+  padding: 5rem 0 5rem 0;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
 }
 .form-container form {
   background: none;
-  max-width: 50rem;
+  max-width: 70rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
   box-sizing: border-box;
 }
 .form-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem; /* much larger */
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   margin-top: 0;
   padding: 0;
   color: #222;
 }
 .input-row {
   display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 .input-row .form-group {
   flex: 1;
@@ -63,48 +63,48 @@ p {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .form-group label {
   font-weight: bold;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
   color: #222;
-  font-size: 1.2rem;
+  font-size: 2rem; /* much larger */
 }
 .form-group input,
 .form-group textarea {
-  padding: 1.2rem;
+  padding: 2rem;
   border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
+  border-radius: 1rem;
+  font-size: 2rem; /* much larger */
   background: #fff;
   resize: none;
   box-sizing: border-box;
   width: 100%;
 }
 .form-group textarea {
-  min-height: 7rem;
+  min-height: 12rem;
   max-width: 100%;
 }
 .form-actions {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 1.2rem;
+  margin-top: 2rem;
 }
 input[type="submit"] {
   background: #00ad78;
   color: white;
   border: none;
   border-radius: 0;
-  font-size: 1.3rem;
-  padding: 1rem 2rem;
+  font-size: 2.2rem; /* much larger */
+  padding: 1.5rem 3rem;
   cursor: pointer;
   transform: skew(-20deg);
-  min-width: 7rem;
+  min-width: 10rem;
   transition: background 0.2s;
   font-weight: bold;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.15rem;
   margin-left: auto;
   display: block;
 }
@@ -114,24 +114,28 @@ input[type="submit"]:hover {
 
 /* Responsive styles for mobile */
 @media (max-width: 700px) {
-  h1, .form-title {
-    font-size: clamp(2rem, 7vw, 3rem);
-    line-height: 1.15;
+  body {
+    font-size: 2rem;
+  }
+  h1,
+  .form-title {
+    font-size: clamp(3rem, 15vw, 5rem);
+    line-height: 1.1;
   }
   p {
-    font-size: clamp(1.25rem, 6vw, 1.7rem);
-    padding: 0 2vw;
+    font-size: clamp(2.5rem, 9vw, 4rem);
+    padding: 0 4vw;
     line-height: 1.35;
   }
   .form-container {
     height: auto;
     min-height: 0;
-    padding: 2rem 0 2rem 0;
+    padding: 3rem 0 3rem 0;
   }
   .form-container form {
     max-width: 99vw;
     width: 99vw;
-    padding: 0 2vw;
+    padding: 0 4vw;
   }
   .input-row {
     flex-direction: column;
@@ -139,20 +143,20 @@ input[type="submit"]:hover {
     margin-bottom: 0;
   }
   .form-group {
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
   }
   .form-group label,
   .form-group input,
   .form-group textarea {
-    font-size: clamp(1.15rem, 6vw, 1.7rem);
+    font-size: clamp(2rem, 9vw, 4rem);
   }
   .form-actions {
-    margin-top: 1.2rem;
+    margin-top: 2rem;
   }
   input[type="submit"] {
     width: auto;
-    font-size: clamp(1.2rem, 6vw, 1.8rem);
-    padding: 1rem 2rem;
+    font-size: clamp(2rem, 9vw, 4rem);
+    padding: 1.5rem 3rem;
     margin-left: auto;
   }
 }
@@ -160,19 +164,19 @@ input[type="submit"]:hover {
   .form-container form {
     max-width: 99vw;
     width: 99vw;
-    padding: 0 1vw;
+    padding: 0 2vw;
   }
   .form-title, h1 {
-    font-size: clamp(1.7rem, 8vw, 2.7rem);
+    font-size: clamp(2.5rem, 18vw, 4rem);
   }
   .form-group label,
   .form-group input,
   .form-group textarea {
-    font-size: clamp(1.1rem, 7vw, 1.6rem);
+    font-size: clamp(1.8rem, 12vw, 3rem);
   }
   p {
-    font-size: clamp(1rem, 7vw, 1.5rem);
-    padding: 0 1vw;
+    font-size: clamp(1.5rem, 12vw, 3rem);
+    padding: 0 2vw;
   }
 }
 </style>
