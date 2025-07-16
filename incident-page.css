@@ -1,183 +1,87 @@
 <head>
 <style>
 body {
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 1.7rem; /* even bigger base */
+    background: #fff;
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1.06rem;
 }
 h1 {
-  color: #222;
-  text-align: center;
-  padding-top: 4rem;
-  font-size: 4rem; /* much larger */
-  margin-bottom: 2.5rem;
-  font-weight: bold;
+    color: #222;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
-p {
-  text-align: center;
-  color: #555;
-  max-width: 60rem;
-  margin: 0 auto 3rem auto;
-  font-size: 2.5rem;
+p, .about-content {
+    font-size: 1.1rem;
 }
-.form-container {
-  background: #f1f3f6;
-  width: 100%;
-  height: auto;
-  min-height: 0;
-  margin: 0;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 5rem 0 5rem 0;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
+.form-container,
+.scope-section {
+    padding: 2rem 0;
+    border-radius: 1.2rem;
 }
-.form-container form {
-  background: none;
-  max-width: 70rem;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 4rem;
-  box-sizing: border-box;
+.form-title, .scope-header, .strategy-header {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.form-title {
-  text-align: center;
-  font-size: 3rem; /* much larger */
-  font-weight: bold;
-  margin-bottom: 3rem;
-  margin-top: 0;
-  padding: 0;
-  color: #222;
+.scope-card, .strategy-card {
+    font-size: 1rem;
 }
-.input-row {
-  display: flex;
-  gap: 3rem;
-  margin-bottom: 3rem;
+input, textarea, .incident-banner-btn {
+    font-size: 1rem;
 }
-.input-row .form-group {
-  flex: 1;
+.incident-banner-title {
+    font-size: 1.3rem;
 }
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
-}
-.form-group label {
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #222;
-  font-size: 2rem; /* much larger */
-}
-.form-group input,
-.form-group textarea {
-  padding: 2rem;
-  border: 1px solid #d1d5db;
-  border-radius: 1rem;
-  font-size: 2rem; /* much larger */
-  background: #fff;
-  resize: none;
-  box-sizing: border-box;
-  width: 100%;
-}
-.form-group textarea {
-  min-height: 12rem;
-  max-width: 100%;
-}
-.form-actions {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 2rem;
-}
-input[type="submit"] {
-  background: #00ad78;
-  color: white;
-  border: none;
-  border-radius: 0;
-  font-size: 2.2rem; /* much larger */
-  padding: 1.5rem 3rem;
-  cursor: pointer;
-  transform: skew(-20deg);
-  min-width: 10rem;
-  transition: background 0.2s;
-  font-weight: bold;
-  letter-spacing: 0.15rem;
-  margin-left: auto;
-  display: block;
-}
-input[type="submit"]:hover {
-  background: #008f63;
+.incident-banner-btn {
+    padding: 0.7rem 1.2rem;
 }
 
-/* Responsive styles for mobile */
+/* MOBILE: BIGGER SIZES ONLY ON SMALL SCREENS */
 @media (max-width: 700px) {
-  body {
-    font-size: 2rem;
-  }
-  h1,
-  .form-title {
-    font-size: clamp(3rem, 15vw, 5rem);
-    line-height: 1.1;
-  }
-  p {
-    font-size: clamp(2.5rem, 9vw, 4rem);
-    padding: 0 4vw;
-    line-height: 1.35;
-  }
-  .form-container {
-    height: auto;
-    min-height: 0;
-    padding: 3rem 0 3rem 0;
-  }
-  .form-container form {
-    max-width: 99vw;
-    width: 99vw;
-    padding: 0 4vw;
-  }
-  .input-row {
-    flex-direction: column;
-    gap: 0;
-    margin-bottom: 0;
-  }
-  .form-group {
-    margin-bottom: 2rem;
-  }
-  .form-group label,
-  .form-group input,
-  .form-group textarea {
-    font-size: clamp(2rem, 9vw, 4rem);
-  }
-  .form-actions {
-    margin-top: 2rem;
-  }
-  input[type="submit"] {
-    width: auto;
-    font-size: clamp(2rem, 9vw, 4rem);
-    padding: 1.5rem 3rem;
-    margin-left: auto;
-  }
-}
-@media (max-width: 400px) {
-  .form-container form {
-    max-width: 99vw;
-    width: 99vw;
-    padding: 0 2vw;
-  }
-  .form-title, h1 {
-    font-size: clamp(2.5rem, 18vw, 4rem);
-  }
-  .form-group label,
-  .form-group input,
-  .form-group textarea {
-    font-size: clamp(1.8rem, 12vw, 3rem);
-  }
-  p {
-    font-size: clamp(1.5rem, 12vw, 3rem);
-    padding: 0 2vw;
-  }
+    body {
+        font-size: 1.3rem;
+    }
+    h1 {
+        font-size: clamp(2.2rem, 8vw, 3.2rem);
+        padding-top: 2.5rem;
+    }
+    p, .about-content {
+        font-size: clamp(1.3rem, 6vw, 1.7rem);
+    }
+    .form-container,
+    .scope-section {
+        padding: 2.5rem 0.5rem;
+        border-radius: 1.6rem;
+    }
+    .form-title, .scope-header, .strategy-header {
+        font-size: clamp(1.9rem, 7vw, 2.5rem);
+    }
+    .scope-card, .strategy-card {
+        font-size: clamp(1.2rem, 6vw, 1.7rem);
+        padding: 1.2rem 0.6rem;
+        border-radius: 1rem;
+    }
+    input, textarea, .incident-banner-btn {
+        font-size: clamp(1.2rem, 5vw, 1.6rem);
+        padding: 1rem 1.5rem;
+    }
+    .incident-banner-title {
+        font-size: clamp(2rem, 7vw, 2.7rem);
+    }
+    .incident-banner-btn {
+        font-size: clamp(1.2rem, 5vw, 1.7rem);
+        min-width: 4rem;
+        padding: 1rem 1.2rem;
+        border-radius: 0.6rem;
+    }
+    .scope-grid,
+    .strategy-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
 }
 </style>
 </head> 
