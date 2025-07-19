@@ -5,22 +5,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    font-size: 1.25rem;
+    font-size: calc(0.95rem + 2rem);
 }
 h1 {
     color: #222;
     text-align: center;
-    padding-top: 1.8rem;      /* 24px */
-    font-size: 1.9rem;
-    margin-bottom: 0.8rem;    /* 8px */
+    padding-top: calc(1.5rem + 2rem);      /* 24px + 2rem */
+    font-size: calc(1.6rem + 2rem);
+    margin-bottom: calc(0.5rem + 2rem);    /* 8px + 2rem */
     font-weight: bold;
 }
 p {
     text-align: center;
     color: #555;
-    max-width: 37.8rem;       /* 600px */
-    margin: 0 auto 1.8rem auto; /* 24px */
-    font-size: 1.3rem;
+    max-width: calc(37.5rem + 2rem);       /* 600px + 2rem */
+    margin: 0 auto calc(1.5rem + 2rem) auto; /* 24px + 2rem */
+    font-size: calc(1rem + 2rem);
 }
 .form-container {
     background: #f1f3f6;
@@ -30,32 +30,32 @@ p {
     margin: 0;
     border-radius: 0;
     box-shadow: none;
-    padding: 2.8rem 0;        /* 40px */
+    padding: calc(2.5rem + 2rem) 0;        /* 40px + 2rem */
     display: flex;
     justify-content: center;
     box-sizing: border-box;
 }
 .form-container form {
     background: none;
-    max-width: 44.05rem;      /* 700px */
+    max-width: calc(43.75rem + 2rem);      /* 700px + 2rem */
     width: 100%;
     margin: 0 auto;
-    padding: 0 1.8rem;        /* 24px */
+    padding: 0 calc(1.5rem + 2rem);        /* 24px + 2rem */
     box-sizing: border-box;
 }
 .form-title {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: calc(1.5rem + 2rem);
     font-weight: bold;
-    margin-bottom: 1.8rem;    /* 24px */
+    margin-bottom: calc(1.5rem + 2rem);    /* 24px + 2rem */
     margin-top: 0;
     padding: 0;
     color: #222;
 }
 .input-row {
     display: flex;
-    gap: 1.3rem;                /* 16px */
-    margin-bottom: 1.3rem;      /* 16px */
+    gap: calc(1rem + 2rem);                /* 16px + 2rem */
+    margin-bottom: calc(1rem + 2rem);      /* 16px + 2rem */
 }
 .input-row .form-group {
     flex: 1;
@@ -63,45 +63,45 @@ p {
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.3rem;      /* 16px */
+    margin-bottom: calc(1rem + 2rem);      /* 16px + 2rem */
 }
 .form-group label {
     font-weight: bold;
-    margin-bottom: 0.675rem;  /* 6px */
+    margin-bottom: calc(0.375rem + 2rem);  /* 6px + 2rem */
     color: #222;
-    font-size: 1.3rem;
+    font-size: calc(1rem + 2rem);
 }
 .form-group input,
 .form-group textarea {
-    padding: 1.05rem;         /* 12px */
+    padding: calc(0.75rem + 2rem);         /* 12px + 2rem */
     border: 1px solid #d1d5db;
-    border-radius: 0.6125rem; /* 5px */
-    font-size: 1.3rem;
+    border-radius: calc(0.3125rem + 2rem); /* 5px + 2rem */
+    font-size: calc(1rem + 2rem);
     background: #fff;
     resize: none;
     box-sizing: border-box;
     width: 100%;
 }
 .form-group textarea {
-    min-height: 5.3rem;         /* 80px */
+    min-height: calc(5rem + 2rem);         /* 80px + 2rem */
     max-width: 100%;
 }
 .form-actions {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 1.05rem;      /* 12px */
+    margin-top: calc(0.75rem + 2rem);      /* 12px + 2rem */
 }
 input[type="submit"], button, .incident-banner-btn {
     background: #00ad78;
     color: white;
     border: none;
-    border-radius: 0.55rem;   /* 4px */
-    font-size: 1.3rem;
-    padding: 0.95rem 1.5rem;  /* 12px 24px */
+    border-radius: calc(0.25rem + 2rem);   /* 4px + 2rem */
+    font-size: calc(1rem + 2rem);
+    padding: calc(0.75rem + 2rem) calc(1.5rem + 2rem);  /* 12px + 2rem, 24px + 2rem */
     cursor: pointer;
     transform: skew(-10deg);
-    min-width: 5.925rem;      /* 90px */
+    min-width: calc(5.625rem + 2rem);      /* 90px + 2rem */
     transition: background 0.2s;
     font-weight: bold;
     letter-spacing: 1px;
@@ -116,14 +116,14 @@ input[type="submit"]:hover, button:hover, .incident-banner-btn:hover {
     background: #2ad2a3;
     color: #fff;
     font-weight: 600;
-    padding: 0.95rem 1.425rem; /* 12px 18px */
-    border-radius: 0.55rem;    /* 4px */
+    padding: calc(0.75rem + 2rem) calc(1.125rem + 2rem); /* 12px + 2rem, 18px + 2rem */
+    border-radius: calc(0.25rem + 2rem);    /* 4px + 2rem */
     text-decoration: none;
-    font-size: 0.95rem;
-    min-width: 3.75rem;        /* 60px */
-    width: 5.3rem;               /* 80px */
+    font-size: calc(0.8rem + 2rem);
+    min-width: calc(3.75rem + 2rem);        /* 60px + 2rem */
+    width: calc(5rem + 2rem);               /* 80px + 2rem */
     text-align: center;
-    box-shadow: 0 0.425rem 0.8rem rgba(42,210,163,0.12); /* 2px 8px */
+    box-shadow: 0 calc(0.125rem + 2rem) calc(0.5rem + 2rem) rgba(42,210,163,0.12); /* 2px + 2rem, 8px + 2rem */
     transition: background 0.2s, transform 0.2s;
     margin-top: 0;
     transform: skew(-20deg);
@@ -135,22 +135,21 @@ input[type="submit"]:hover, button:hover, .incident-banner-btn:hover {
     transform: skew(20deg);
     white-space: nowrap;
 }
-/* --- MOBILE MEDIA QUERIES --- */
 @media (max-width: 700px) {
     body {
-        font-size: 1.48rem;
+        font-size: calc(1.18rem + 2rem);
     }
     h1, .form-title {
-        font-size: 1.7rem;
+        font-size: calc(1.3rem + 2rem);
         line-height: 1.2;
     }
     p {
-        font-size: 1.12rem;
+        font-size: calc(1.12rem + 2rem);
         padding: 0 2vw;
         line-height: 1.35;
     }
     .form-container {
-        padding: 1.8rem 0; /* 24px */
+        padding: calc(1.5rem + 2rem) 0;
     }
     .form-container form {
         max-width: 99vw;
@@ -163,23 +162,23 @@ input[type="submit"]:hover, button:hover, .incident-banner-btn:hover {
         margin-bottom: 0;
     }
     .form-group {
-        margin-bottom: 0.95rem; /* 14px */
+        margin-bottom: calc(0.875rem + 2rem);
     }
     .form-group label {
-        font-size: 1.18rem;
+        font-size: calc(1.08rem + 2rem);
     }
     .form-group input,
     .form-group textarea {
-        font-size: 1.18rem;
+        font-size: calc(1.08rem + 2rem);
         width: 100%;
     }
     .form-actions {
-        margin-top: 0.95rem;
+        margin-top: calc(0.75rem + 2rem);
     }
     input[type="submit"], button, .incident-banner-btn {
         width: auto;
-        font-size: 1.3rem;
-        padding: 0.7375rem 1.8rem; /* 7px 24px */
+        font-size: calc(1rem + 2rem);
+        padding: calc(0.4375rem + 2rem) calc(1.5rem + 2rem);
     }
 }
 @media (max-width: 400px) {
@@ -189,13 +188,13 @@ input[type="submit"]:hover, button:hover, .incident-banner-btn:hover {
         padding: 0 1vw;
     }
     .form-title, h1 {
-        font-size: 1.39rem;
+        font-size: calc(1.09rem + 2rem);
     }
     .form-group label {
-        font-size: 1.3rem;
+        font-size: calc(1rem + 2rem);
     }
     p {
-        font-size: 1.28rem;
+        font-size: calc(0.98rem + 2rem);
         padding: 0 1vw;
     }
 }
