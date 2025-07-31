@@ -421,56 +421,14 @@ body {
         padding: 8px 6px;
         border-radius: 3px;
    /* --- ADD THIS BLOCK TO YOUR CSS --- */
-@media (max-width: 600px) {
-    .about-section {
-        flex-direction: column !important;
-        align-items: center;
-        min-height: unset;
-        padding: 12px 0 8px 0;
-        gap: 10px;
-    }
-    .header-image {
-        margin-left: 0;
-        max-width: 100vw;
-        justify-content: center;
-        width: 100%;
-        order: 1;
-    }
-    .header-image img {
-        max-width: 90vw;
-        border-radius: 7px;
-        width: 100%;
-    }
-    .about-content {
-        padding: 0 6vw;
-        font-size: 0.97em;
-        max-width: 100vw;
-        text-align: center;
-        order: 2;
-    }
-    .scope-section,
-    .strategy-section {
-        border-radius: 10px;
-        padding: 6px 2vw 6px 2vw;
-        margin-bottom: 10px;
-        max-width: 99vw;
-        box-sizing: border-box;
-    }
-    .scope-grid, .strategy-grid {
-        grid-template-columns: 1fr;
-        gap: 8px;
-        width: 100%;
-        max-width: 99vw;
-    }
-    .scope-card, .strategy-card {
-        min-width: unset;
-        min-height: 66px;
-        padding: 10px 2px 8px 2px;
-        border-radius: 7px;
-        font-size: 0.98em;
-        width: 100%;
-        box-sizing: border-box;
-    }
+.about-section { flex-direction: column !important; align-items: center; min-height: unset; padding: 12px 0 8px 0; gap: 10px; }
+    .header-image { margin-left: 0; max-width: 100vw; justify-content: center; width: 100%; order: 1; }
+    .header-image img { max-width: 90vw; border-radius: 7px; width: 100%; }
+    .about-content { padding: 0 6vw; font-size: 0.97em; max-width: 100vw; text-align: center; order: 2; }
+    .scope-section, .strategy-section { border-radius: 10px; padding: 6px 2vw 6px 2vw; margin-bottom: 10px; max-width: 99vw; box-sizing: border-box; }
+    .scope-grid, .strategy-grid { grid-template-columns: 1fr; gap: 8px; width: 100%; max-width: 99vw; }
+    .scope-card, .strategy-card { min-width: unset; min-height: 66px; padding: 10px 2px 8px 2px; border-radius: 7px; font-size: 0.98em; width: 100%; box-sizing: border-box; }
+}
 }
 </style>
 </head>
