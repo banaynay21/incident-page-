@@ -2,6 +2,7 @@
 <head>
 <style>
 body {
+     background-color: red !important;
     background: #fff;
     margin: 0;
     font-family: 'Inter', Arial, sans-serif;
@@ -482,4 +483,5 @@ body {
 }
 </style>
 </head>
+
 
