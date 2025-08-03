@@ -1,4 +1,3 @@
-<style>
 body {
     background: #fff;
     margin: 0;
@@ -356,38 +355,21 @@ body {
     color: #00e6c3;
 }
 
-/* MOBILE RESPONSIVE STYLES */
-@media (max-width: 56.25rem) { /* 900px */
+/* ONLY MOBILE LAYOUT CHANGES */
+@media (max-width: 56.25rem) {
     .about-section {
-        flex-direction: column !important;
-        align-items: center !important;
-    }
-    .about-content {
-        order: 2 !important;
-        max-width: 100% !important;
+        flex-direction: column;
     }
     .header-image {
-        order: 1 !important;
-        margin-left: 0 !important;
-        justify-content: center !important;
+        order: 1;
+        margin-left: 0;
+    }
+    .about-content {
+        order: 2;
     }
     .scope-grid {
-        grid-template-columns: 1fr !important;
-    }
-    .strategy-grid {
-        grid-template-columns: 1fr !important;
-    }
-    .footer-top {
-        flex-direction: column !important;
-    }
-    .footer-bottom {
-        flex-direction: column !important;
-    }
-    .incident-banner-content {
-        width: 100% !important;
+        grid-template-columns: 1fr;
     }
 }
 
-
-</style>
 
