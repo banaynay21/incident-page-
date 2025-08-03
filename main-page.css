@@ -359,100 +359,35 @@ body {
 /* MOBILE RESPONSIVE STYLES */
 @media (max-width: 56.25rem) { /* 900px */
     .about-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 1.125rem 1rem;
-        gap: 1.125rem;
-        min-height: auto;
+        flex-direction: column !important;
+        align-items: center !important;
     }
     .about-content {
-        order: 2;
-        max-width: 100%;
-        text-align: center;
+        order: 2 !important;
+        max-width: 100% !important;
     }
     .header-image {
-        order: 1;
-        margin-left: 0;
-        justify-content: center;
-        max-width: 100%;
-    }
-    .header-image img {
-        width: 100%;
-        max-width: 20rem;
-    }
-    .scope-section {
-        padding: 0.75rem 1rem;
+        order: 1 !important;
+        margin-left: 0 !important;
+        justify-content: center !important;
     }
     .scope-grid {
-        grid-template-columns: 1fr;
-        gap: 0.75rem;
+        grid-template-columns: 1fr !important;
     }
     .strategy-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        grid-template-columns: 1fr !important;
     }
     .footer-top {
-        flex-direction: column;
-        padding: 1rem;
-        gap: 0.75rem;
+        flex-direction: column !important;
     }
     .footer-bottom {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 0.75rem 1rem;
-        font-size: 0.9em;
+        flex-direction: column !important;
     }
     .incident-banner-content {
-        width: 100%;
-        padding: 1rem;
+        width: 100% !important;
     }
 }
 
-@media (max-width: 37.5rem) { /* 600px */
-    .scope-grid {
-        gap: 0.5rem;
-    }
-    .strategy-section {
-        padding: 0.5rem 1rem;
-    }
-}
 
-@media (max-width: 26.875rem) { /* 430px */
-    .about-section {
-        padding: 0.75rem 0.5rem;
-        gap: 0.75rem;
-    }
-    .header-image img {
-        max-width: 18rem;
-        border-radius: 0.5rem;
-    }
-    .about-content {
-        padding: 0 0.5rem;
-        font-size: 0.95em;
-    }
-    .scope-section,
-    .strategy-section {
-        border-radius: 1rem;
-        padding: 0.5rem;
-    }
-    .scope-card {
-        min-width: unset;
-        min-height: 4rem;
-        padding: 0.75rem 0.5rem;
-        border-radius: 0.5rem;
-        font-size: 0.95em;
-    }
-    .footer-col {
-        min-width: 10rem;
-    }
-    .incident-banner-content {
-        padding: 0.75rem 0.5rem;
-    }
-    .incident-banner-btn {
-        font-size: 0.75em;
-        min-width: 3rem;
-        width: 4rem;
-        padding: 0.5rem 0.75rem;
-    }
-}
 </style>
+
