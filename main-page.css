@@ -1,6 +1,10 @@
 
 <head>
 <style>
+@media (max-width: 56.25rem) {
+    body {
+        background-color: blue !important;
+    }
 body {
      background-color: red !important;
     background: #fff;
@@ -483,5 +487,6 @@ body {
 }
 </style>
 </head>
+
 
 
