@@ -1,149 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="main-page.css">
-<title>main page</title>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharjah Cyber Security Center</title>
+    <meta name="description" content="Official website of Sharjah Cyber Security Center">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
+    <div class="main-container mx-auto px-2 w-full max-w-[1100px]">
+        <!-- ABOUT SCSC SECTION -->
+        <div class="about-section flex flex-col md:flex-row justify-between items-center py-4 md:py-6 px-4 md:px-6 gap-4 md:gap-6 mb-4">
+            <div class="about-content max-w-[340px] w-full">
+                <div class="about-label text-sm font-semibold text-blue-600 mb-1">ABOUT SCSC</div>
+                <h1 class="about-title text-xl md:text-2xl font-bold text-gray-800 mb-3 leading-tight">One Government Initiative<br>SCSC Lorem Ipsum is simply dummy</h1>
+                <p class="about-desc text-gray-600 text-sm leading-relaxed">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+                </p>
+            </div>
+            <div class="header-image flex-1 flex justify-end items-center ml-0 md:ml-8 max-w-[420px]">
+                <img src="https://picsum.photos/420/280?random=1" alt="Header visual" 
+                     class="w-full max-w-[420px] rounded-lg shadow-md border border-gray-200 md:block">
+            </div>
+        </div>
 
-    <!-- ABOUT SCSC SECTION -->
-    <div class="about-section">
-        <div class="about-content">
-            <div class="about-label">ABOUT SCSC</div>
-            <div class="about-title">One Government Initiative<br>SCSC Lorem Ipsum is simply dummy</div>
-            <div class="about-desc">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+        <!-- SCOPE SECTION -->
+        <div class="scope-section bg-gray-50 rounded-2xl p-4 md:p-6 mb-4 shadow-sm border border-gray-200 max-w-[900px] mx-auto">
+            <div class="scope-header text-center mb-3">
+                <div class="scope-subtitle text-sm font-semibold text-blue-600">OUR SCOPE</div>
+                <h2 class="scope-title text-lg md:text-xl font-bold text-gray-800 mt-1 leading-tight">One Government Initiative<br>SCSC Lorem Ipsum is simply dummy text</h2>
+            </div>
+            <div class="scope-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-[900px] mx-auto">
+                <!-- Scope Cards -->
+                <div class="scope-card bg-white rounded-xl p-3 shadow-sm text-center flex flex-col items-center min-h-[80px] border border-gray-200">
+                    <div class="scope-icon text-2xl mb-2">🛡️</div>
+                    <h3 class="scope-card-title font-bold text-indigo-800 mb-1">Cyber Awareness</h3>
+                    <p class="scope-card-desc text-gray-500 text-xs leading-snug">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.
+                    </p>
+                </div>
+                <div class="scope-card bg-white rounded-xl p-3 shadow-sm text-center flex flex-col items-center min-h-[80px] border border-gray-200">
+                    <div class="scope-icon text-2xl mb-2">🤖</div>
+                    <h3 class="scope-card-title font-bold text-indigo-800 mb-1">Artificial Intelligence</h3>
+                    <p class="scope-card-desc text-gray-500 text-xs leading-snug">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.
+                    </p>
+                </div>
+                <div class="scope-card bg-white rounded-xl p-3 shadow-sm text-center flex flex-col items-center min-h-[80px] border border-gray-200">
+                    <div class="scope-icon text-2xl mb-2">🛡️</div>
+                    <h3 class="scope-card-title font-bold text-indigo-800 mb-1">Cyber Resilience</h3>
+                    <p class="scope-card-desc text-gray-500 text-xs leading-snug">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.
+                    </p>
+                </div>
+                <div class="scope-card bg-white rounded-xl p-3 shadow-sm text-center flex flex-col items-center min-h-[80px] border border-gray-200">
+                    <div class="scope-icon text-2xl mb-2">🌐</div>
+                    <h3 class="scope-card-title font-bold text-indigo-800 mb-1">Security Updates</h3>
+                    <p class="scope-card-desc text-gray-500 text-xs leading-snug">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.
+                    </p>
+                </div>
+                <div class="scope-card bg-white rounded-xl p-3 shadow-sm text-center flex flex-col items-center min-h-[80px] border border-gray-200">
+                    <div class="scope-icon text-2xl mb-2 text-blue-600">🔒</div>
+                    <h3 class="scope-card-title font-bold text-indigo-800 mb-1">Cyber Vulnerabilities</h3>
+                    <p class="scope-card-desc text-gray-500 text-xs leading-snug">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.
+                    </p>
+                </div>
+                <div class="scope-card bg-white rounded-xl p-3 shadow-sm text-center flex flex-col items-center min-h-[80px] border border-gray-200">
+                    <div class="scope-icon text-2xl mb-2">🔐</div>
+                    <h3 class="scope-card-title font-bold text-indigo-800 mb-1">Cyber Security</h3>
+                    <p class="scope-card-desc text-gray-500 text-xs leading-snug">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="header-image">
-            <img src="pic 1.jpg" alt="Header visual">
-        </div>
-    </div>
 
-    <!-- SCOPE SECTION -->
-    <div class="scope-section">
-        <div class="scope-header">
-            <div class="scope-subtitle">OUR SCOPE</div>
-            <div class="scope-title">One Government Initiative<br>SCSC Lorem Ipsum is simply dummy text</div>
-        </div>
-        <div class="scope-grid">
-            <div class="scope-card">
-                <div class="scope-icon">🛡️</div>
-                <div class="scope-card-title">Cyber Awareness</div>
-                <div class="scope-card-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.</div>
+        <!-- STRATEGY SECTION -->
+        <div class="strategy-section max-w-[1100px] mx-auto mb-4">
+            <div class="strategy-header text-center mb-3">
+                <div class="strategy-subtitle text-sm font-semibold text-blue-600">OUR STRATEGY</div>
+                <h2 class="strategy-title text-lg md:text-xl font-bold text-gray-800 mt-1 leading-tight">Strategy mmy text of the printing<br>and typesetting industry</h2>
             </div>
-            <div class="scope-card">
-                <div class="scope-icon">🤖</div>
-                <div class="scope-card-title">Artificial Intelligence</div>
-                <div class="scope-card-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.</div>
-            </div>
-            <div class="scope-card">
-                <div class="scope-icon">🛡️</div>
-                <div class="scope-card-title">Cyber Resilience</div>
-                <div class="scope-card-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.</div>
-            </div>
-            <div class="scope-card">
-                <div class="scope-icon">🌐</div>
-                <div class="scope-card-title">Security Updates</div>
-                <div class="scope-card-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.</div>
-            </div>
-            <div class="scope-card">
-                <div class="scope-icon" style="color:#1976d2;">🔒</div>
-                <div class="scope-card-title">Cyber Vulnerabilities</div>
-                <div class="scope-card-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.</div>
-            </div>
-            <div class="scope-card">
-                <div class="scope-icon">🔐</div>
-                <div class="scope-card-title">Cyber Security</div>
-                <div class="scope-card-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat.</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- STRATEGY SECTION -->
-    <div class="strategy-section">
-        <div class="strategy-header">
-            <div class="strategy-subtitle">OUR STRATEGY</div>
-            <div class="strategy-title">Strategy mmy text of the printing<br>and typesetting industry</div>
-        </div>
-        <div class="strategy-grid">
-            <div class="strategy-card">
-                <div class="strategy-number">01.</div>
-                <div class="strategy-headline">Headline Place Here</div>
-                <div class="strategy-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. placerat.</div>
-            </div>
-            <div class="strategy-card">
-                <div class="strategy-number">02.</div>
-                <div class="strategy-headline">Headline Place Here</div>
-                <div class="strategy-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. placerat.</div>
-            </div>
-            <div class="strategy-card">
-                <div class="strategy-number">03.</div>
-                <div class="strategy-headline">Headline Place Here</div>
-                <div class="strategy-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. placerat.</div>
-            </div>
-            <div class="strategy-card">
-                <div class="strategy-number">04.</div>
-                <div class="strategy-headline">Headline Place Here</div>
-                <div class="strategy-desc">Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. placerat.</div>
+            <div class="strategy-grid grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 max-w-[950px] mx-auto">
+                <!-- Strategy Cards -->
+                <div class="strategy-card">
+                    <div class="strategy-number text-blue-600 font-bold mb-1">01.</div>
+                    <h3 class="strategy-headline text-blue-600 font-bold mb-2">Headline Place Here</h3>
+                    <p class="strategy-desc text-gray-500 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. placerat.
+                    </p>
+                </div>
+                <div class="strategy-card">
+                    <div class="strategy-number text-blue-600 font-bold mb-1">02.</div>
+                    <h3 class="strategy-headline text-blue-600 font-bold mb-2">Headline Place Here</h3>
+                    <p class="strategy-desc text-gray-500 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. placerat.
+                    </p>
+                </div>
+                <div class="strategy-card">
+                    <div class="strategy-number text-blue-600 font-bold mb-1">03.</div>
+                    <h3 class="strategy-headline text-blue-600 font-bold mb-2">Headline Place Here</h3>
+                    <p class="strategy-desc text-gray-500 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. placerat.
+                    </p>
+                </div>
+                <div class="strategy-card">
+                    <div class="strategy-number text-blue-600 font-bold mb-1">04.</div>
+                    <h3 class="strategy-headline text-blue-600 font-bold mb-2">Headline Place Here</h3>
+                    <p class="strategy-desc text-gray-500 text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. Lorem ipsum dolor sit amet, adipiscing elit. Vivamus volutpat ante eget diam luctus placerat. placerat.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- INCIDENT BANNER + FOOTER -->
-    <div class="incident-footer-wrap">
-        <div class="incident-banner incident-footer-banner">
-            <img src="pic3.jpg" alt="Report an Incident Banner" class="incident-banner-img" style="height:200px; object-fit:cover;">
-            <div class="incident-banner-content">
-                <div class="incident-banner-label">REPORT AN INCIDENT</div>
-                <div class="incident-banner-title">
+    <div class="incident-footer-wrap mt-auto">
+        <div class="incident-banner relative w-full min-h-[180px] overflow-hidden">
+            <img src="https://picsum.photos/1200/300?random=2" alt="Report an Incident Banner" 
+                 class="incident-banner-img w-full h-full object-cover min-h-[180px] brightness-75 contrast-110 grayscale-10">
+            <div class="incident-banner-content absolute top-0 left-0 h-full w-full md:w-1/2 min-w-[280px] flex flex-col justify-center p-4 md:p-8 md:pr-16 text-white bg-gradient-to-r from-[rgba(34,52,74,0.85)] via-[rgba(34,52,74,0.85)] to-transparent">
+                <div class="incident-banner-label text-sm tracking-wider opacity-85 font-semibold mb-2 uppercase">REPORT AN INCIDENT</div>
+                <h3 class="incident-banner-title text-lg md:text-xl font-bold mb-4 leading-snug drop-shadow-md">
                     Have you spotted a security breach?<br>
                     Keep Sharjah safe and report now
-                </div>
-                <a href="html-incident-page.html" class="incident-banner-btn"><span>Report now</span></a>
+                </h3>
+                <a href="html-incident-page.html" class="skew-btn bg-teal-400 hover:bg-teal-500 text-white font-semibold px-4 py-2 rounded-md shadow-md transition-smooth inline-block w-[80px] text-center">
+                    <span class="whitespace-nowrap text-sm">Report now</span>
+                </a>
             </div>
         </div>
-        <footer class="main-footer incident-footer">
-            <div class="footer-top">
-                <div class="footer-col footer-logo-col">
+        <footer class="main-footer bg-[#22344a] text-white">
+            <div class="footer-top flex flex-wrap justify-between p-6 md:p-8">
+                <div class="footer-col footer-logo-col min-w-[220px] mb-4 max-w-[340px]">
                     <div class="footer-logo">
-                        <div class="footer-logo-en">Sharjah Cyber Security Center</div>
-                        <div class="footer-logo-ar">مركز الشارقة للأمن السيبراني</div>
+                        <div class="footer-logo-en text-lg font-bold mb-1">Sharjah Cyber Security Center</div>
+                        <div class="footer-logo-ar text-sm text-gray-300 mb-2">مركز الشارقة للأمن السيبراني</div>
                     </div>
-                    <div class="footer-desc">
+                    <p class="footer-desc text-sm text-gray-300">
                         Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
-                    </div>
+                    </p>
                 </div>
-                <div class="footer-col footer-map-col">
-                    <div class="footer-col-title">Website Map</div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About US</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Our Scope</a></li>
-                        <li><a href="#">Director Statement</a></li>
-                        <li><a href="#">News & Events</a></li>
+                <div class="footer-col footer-map-col min-w-[220px] mb-4">
+                    <div class="footer-col-title font-bold mb-2">Website Map</div>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-gray-300 hover:text-teal-400 transition-smooth text-sm">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-teal-400 transition-smooth text-sm">About US</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-teal-400 transition-smooth text-sm">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-teal-400 transition-smooth text-sm">Our Scope</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-teal-400 transition-smooth text-sm">Director Statement</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-teal-400 transition-smooth text-sm">News & Events</a></li>
                     </ul>
                 </div>
-                <div class="footer-col footer-contact-col">
-                    <div class="footer-col-title">Contact</div>
-                    <ul>
-                        <li><span class="footer-icon">📍</span> Tower 401, King Faisal St, Sharjah - United Arab Emirates</li>
-                        <li><span class="footer-icon">✉️</span> support@scsc.ae</li>
-                        <li><span class="footer-icon">📞</span> +971600000000</li>
+                <div class="footer-col footer-contact-col min-w-[220px] mb-4">
+                    <div class="footer-col-title font-bold mb-2">Contact</div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start text-sm text-gray-300">
+                            <span class="footer-icon mr-2">📍</span> Tower 401, King Faisal St, Sharjah - United Arab Emirates
+                        </li>
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span class="footer-icon mr-2">✉️</span> support@scsc.ae
+                        </li>
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span class="footer-icon mr-2">📞</span> +971600000000
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div>© All Rights Reserved 2024. Sharjah Cyber Security Center.</div>
-                <div class="footer-social">
+            <div class="footer-bottom bg-[#16202b] flex flex-col md:flex-row justify-between items-center p-4 md:px-8 text-sm">
+                <div class="mb-2 md:mb-0">© All Rights Reserved 2024. Sharjah Cyber Security Center.</div>
+                <div class="footer-social flex items-center gap-2">
                     <span>Follow us</span>
-                    <a href="#"><span class="footer-social-icon">🐦</span></a>
-                    <a href="#"><span class="footer-social-icon">🔗</span></a>
-                    <a href="#"><span class="footer-social-icon">▶️</span></a>
+                    <a href="#" class="text-gray-300 hover:text-teal-400 transition-smooth text-lg"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-teal-400 transition-smooth text-lg"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-teal-400 transition-smooth text-lg"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </footer>
     </div>
+
+    <script>
+        // Navigation handling
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.getAttribute('href') && this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    window.location.href = this.getAttribute('href');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
