@@ -10,22 +10,32 @@ body {
     margin: 0;
 }
 
-/* Custom button styles */
-.skew-btn {
+skew-btn {
     transform: skew(-20deg);
     display: inline-block;
+    background: #2ad2a3;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 1.125rem;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
 }
 .skew-btn span {
     display: inline-block;
     transform: skew(20deg);
+    white-space: nowrap;
 }
-
-/* Custom transitions */
+.skew-btn:hover {
+    background: #00e6c3;
+}
 .transition-smooth {
     transition: all 0.3s ease;
 }
 </style>
 </head>
+
 
 
 
