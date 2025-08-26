@@ -10,7 +10,8 @@ body {
     margin: 0;
 }
 
-skew-btn {
+/* Parallelogram button styles */
+.skew-btn, .parallelogram-btn {
     transform: skew(-20deg);
     display: inline-block;
     background: #2ad2a3;
@@ -22,20 +23,18 @@ skew-btn {
     box-shadow: none;
     border-radius: 0;
 }
-.skew-btn span {
+.skew-btn span, .parallelogram-btn span {
     display: inline-block;
     transform: skew(20deg);
     white-space: nowrap;
 }
-.skew-btn:hover {
+.skew-btn:hover, .parallelogram-btn:hover {
     background: #00e6c3;
 }
+
+/* Custom transitions */
 .transition-smooth {
     transition: all 0.3s ease;
 }
 </style>
 </head>
-
-
-
-
