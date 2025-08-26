@@ -2,6 +2,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+/* Base body styles */
 body {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 0.875rem;
@@ -23,7 +24,7 @@ body {
 .transition-smooth {
     transition: all 0.3s ease;
 }
-}
 </style>
 </head>
+
 
