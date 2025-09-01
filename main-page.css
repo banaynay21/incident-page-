@@ -17,11 +17,12 @@ body {
     background: #2ad2a3;
     color: #fff;
     font-weight: 600;
-    padding: 0.75rem 1.125rem;
+    padding: 0.75rem 1.25rem;
     border: none;
     outline: none;
     box-shadow: none;
     border-radius: 0;
+    font-size: 1rem;
 }
 .skew-btn span, .parallelogram-btn span {
     display: inline-block;
@@ -38,4 +39,5 @@ body {
 }
 </style>
 </head>
+
 
