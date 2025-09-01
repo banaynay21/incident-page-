@@ -22,7 +22,7 @@ body {
     outline: none;
     box-shadow: none;
     border-radius: 0;
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
 .skew-btn span, .parallelogram-btn span {
     display: inline-block;
@@ -39,5 +39,3 @@ body {
 }
 </style>
 </head>
-
-
